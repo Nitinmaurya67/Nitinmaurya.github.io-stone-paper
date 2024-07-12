@@ -1,0 +1,233 @@
+* {
+  border: border-box;
+  margin: 5px 0px;
+}
+/* --------------------back-ground-body---------------------- */
+.bg {
+  background-color: rgb(255, 208, 170);
+}
+
+.nbg {
+  background-color: rgb(26, 30, 39);
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+/* -----------------------heading-1-------------------- */
+.hdl {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: rgb(255, 121, 98);
+  height: 8.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7.5vh;
+}
+
+.hdd {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: rgba(255, 80, 80, 0.653);
+  height: 8.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7.5vh;
+}
+
+/* -----------------------heading-2-------------------- */
+
+.hdl2 {
+  margin-top: 5px;
+
+  background-color: rgb(157, 255, 219);
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7vh;
+}
+
+.hdd2 {
+  margin-top: 5px;
+  background-color: rgba(45, 255, 181, 0.856);
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7vh;
+}
+
+/* ---------------------button--------------------- */
+button {
+  position: absolute;
+  right: 10vh;
+  background-color: rgb(255, 109, 72);
+  border-radius: 50%;
+  border: none;
+  
+  cursor: pointer;
+}
+
+/* ---------------------outer-box & box-------------------- */
+.outer-box {
+  padding: 3%;
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box img {
+  padding: 8.8px;
+  height: 14vh;
+  width: 14vh;
+ 
+}
+
+.box {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(86, 255, 202, 0.897);
+  border-radius: 50%;
+  padding: 1.5vh;
+  height: 15vh;
+  width: 17vh;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 5px 3px rgb(43, 255, 174);
+}
+
+/* ---------------------border--------------------- */
+
+.border:active {
+  box-shadow: 0px 5px 0px -100px rgba(0, 0, 0, 0.1);
+}
+.box img:active {
+  height: 13vh;
+  width: 13vh;
+}
+
+/* ----------------------score bord-------------------- */
+
+.score-bord {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 50vh;
+  margin-right: 50vh;
+  font-size: 2.5vh;
+}
+.msg-container {
+  border-radius: 4rem;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  margin-left: 50vh;
+  margin-right: 50vh;
+  background-color: rgba(255, 165, 129, 0.664);
+  font-size: 3.8vh;
+}
+#msg {
+  text-shadow: 0px 0px 61px 11px rgb(255, 255, 255);
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+
+.nbg {
+  background-color: rgb(32, 41, 54);
+
+ 
+}
+/* -----------------------heading-1-------------------- */
+.hdl {
+
+  height: 2rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.hdd {
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+.hdl2 {
+  width: 100%;
+  margin-top: 1px;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+.hdd2 {
+  margin-top: 1px;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+/* ---------------------button--------------------- */
+button {
+  position: absolute;
+  right: 10px;
+  background-color: rgba(255, 197, 111, 0);
+
+}
+/* ---------------------outer-box & box-------------------- */
+.outer-box{
+padding: 3%;
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box img {
+  padding: 1px;
+  height: 2rem;
+  width:auto;
+
+}
+
+.box {
+  position: relative;
+  top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 2px;
+  height: 4.5rem;
+  width:4.5rem;
+  
+}
+
+/* ---------------------border--------------------- */
+
+.border:active {
+  box-shadow: 0px 5px 0px -100px rgba(0, 0, 0, 0.1);
+}
+.box img:active {
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+/* --------------------score-board--------------------- */
+.score-bord {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 0.8rem;
+}
+.msg-container {
+
+  justify-content: space-around;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: rgb(120, 174, 154);
+  font-size: 0.8rem;
+}
+#msg {
+  text-shadow: 0px 0px 61px 11px rgb(255, 255, 255);
+}
+
+}
