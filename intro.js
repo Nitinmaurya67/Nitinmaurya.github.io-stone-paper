@@ -8,7 +8,15 @@ let bg = document.getElementsByTagName("BODY")[0];
 let heading1 = document.getElementsByTagName("h1")[0];
 let heading2 = document.getElementsByTagName("h3")[0];
 let mode = "white";
+//---------------Music-----------------
+const music = new Audio("the_field_of_dreams.mp3");
+music.volume=0.5;
+const beep = new Audio("beep.wav");
+
+
+
 btn.onclick = () => {
+ 
   if (mode === "white") {
     mode = "grey";
     bg.setAttribute("class", "nbg");
@@ -31,7 +39,7 @@ const playGame = (userChoice, cmpChoice) => {
   console.log("Cmp choice is", cmpChoice);
   if (result(userChoice, cmpChoice) === true) {
     uscore.innerText=++userscore;
-    msgc.style.backgroundColor = "#66ff99";
+    msgc.style.backgroundColor = "rgb(80, 199, 155)";
     msg.innerText =
       `You are Win (Your ${userChoice} beats ${cmpChoice})`;
   } else if (result(userChoice, cmpChoice) === false) {
@@ -57,7 +65,10 @@ choices.forEach((choice) => {
 function computer() {
   const options = ["rock", "paper", "scissor"];
   const indx = Math.floor(Math.random() * 3);
+   music.play();
+   beep.play();
   return options[indx];
+  
 }
 
 function result(userChoice, cmpChoice) {
