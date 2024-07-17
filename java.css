@@ -4,7 +4,19 @@
 }
 /* --------------------back-ground-body---------------------- */
 .bg {
-  background-color: rgb(255, 208, 170);
+  background-color: rgb(255, 208, 170) ;
+
+}
+#bg{
+  height: 50vmin;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  top: 45%;
+  left: 78%;
 }
 
 .nbg {
@@ -21,7 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 7.5vh;
+  font-size: 5.5vh;
 }
 
 .hdd {
@@ -32,37 +44,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 7.5vh;
+  font-size: 5.5vh;
 }
 
 /* -----------------------heading-2-------------------- */
 
 .hdl2 {
   margin-top: 5px;
-
-  background-color: rgb(157, 255, 219);
+  background-color: rgb(80, 199, 155);
   height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 7vh;
+  font-size: 3vh;
+
 }
 
 .hdd2 {
   margin-top: 5px;
-  background-color: rgba(45, 255, 181, 0.856);
+  /* background-color: rgba(133, 222, 190, 0.856); */
   height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 7vh;
+  font-size: 3vh;
+  color: rgb(183, 212, 220);
 }
 
 /* ---------------------button--------------------- */
 button {
   position: absolute;
   right: 10vh;
-  background-color: rgb(255, 109, 72);
+  background-color: rgba(255, 164, 141, 0);
   border-radius: 50%;
   border: none;
   
@@ -88,13 +101,13 @@ button {
    display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(86, 255, 202, 0.897);
+  background-color: rgb(80, 199, 155);
   border-radius: 50%;
   padding: 1.5vh;
   height: 15vh;
   width: 17vh;
   cursor: pointer;
-  box-shadow: inset 0px 0px 5px 3px rgb(43, 255, 174);
+
 }
 
 /* ---------------------border--------------------- */
@@ -126,10 +139,6 @@ button {
   background-color: rgba(255, 165, 129, 0.664);
   font-size: 3.8vh;
 }
-#msg {
-  text-shadow: 0px 0px 61px 11px rgb(255, 255, 255);
-}
-
 
 
 
@@ -164,8 +173,21 @@ button {
 .hdd2 {
   margin-top: 1px;
   height: 2rem;
-  font-size: 1.2rem;
+  font-size: 3vh;
 }
+#bg{
+  height: 50vmin;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  top: 68%;
+  left: 50%;
+  opacity: 0.8;
+}
+
 /* ---------------------button--------------------- */
 button {
   position: absolute;
@@ -175,6 +197,7 @@ button {
 }
 /* ---------------------outer-box & box-------------------- */
 .outer-box{
+  margin-top: 10px;
 padding: 3%;
   height: 150px;
   display: flex;
